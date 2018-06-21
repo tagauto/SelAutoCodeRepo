@@ -1,0 +1,9 @@
+<suite name="Automation TestCases">
+	<test name="Smoke TestCases">
+		<parameter name="adminUserid" value="abcd" />	
+		<classes>
+		 	<class name = "DataDrive.Annotations" />
+		</classes>
+		
+	</test>
+</suite>
