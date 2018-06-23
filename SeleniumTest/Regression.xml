@@ -3,7 +3,6 @@
 	<test name="Regression TestCases">
 		<packages>
 			<package name="ApplicationTest" />
-		</packages>
-		
+		</packages>		
 	</test>
 </suite>

@@ -3,16 +3,17 @@ package ObjectRepository;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+
 public class LoginPage {
 	
 	WebDriver driver;
 	
 	//By userName = By.name("userName");
-	By userName = By.xpath("//input[@name='userName']");
+	By userName = By.xpath(".//input[@name='userName']");
 	
-	By password = By.xpath("//input[@name='password']");
+	By password = By.xpath(".//input[@name='password']");
 	
-	By login = By.xpath("//input[@name='login']");
+	By login = By.xpath(".//input[@name='login']");
 	
 	
 	public LoginPage(WebDriver driver) {    
@@ -23,6 +24,7 @@ public class LoginPage {
 	
 	public void setuserName(String userID)
 	{
+		System.out.println("User Name Displayed: " + driver.findElement(userName).isDisplayed());
 		driver.findElement(userName).sendKeys(userID);		
 		
 	}

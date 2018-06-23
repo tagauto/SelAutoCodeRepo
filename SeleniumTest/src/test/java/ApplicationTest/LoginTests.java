@@ -20,12 +20,14 @@ public class LoginTests extends TestBase {
 	//WebDriver driver;
 	
 	
-	WebDriver driver = new ChromeDriver();
+	
 	
 	
 	@Test
 	public void ALoginTest() throws IOException
 	{
+		System.out.println("-------Started test cases-----");
+		//WebDriver driver = new ChromeDriver();
 		//Login to application
 		setup();
 		System.out.println("-------I am in the test cases-----");

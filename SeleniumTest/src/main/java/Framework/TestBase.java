@@ -24,6 +24,7 @@ public class TestBase {
 		
 		if(p.getProperty("browser").contains("chrome"))
 		{
+			System.out.println("Setting up chrome driver ");
 			System.setProperty("webdriver.chrome.driver", "C:\\Apps\\Jars\\chromedriver.exe");
 			driver = new ChromeDriver();			
 		}
